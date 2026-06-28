@@ -1,230 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jeet Karkar | Professional Portfolio</title>
-
-<style>
-body{
-    margin:0;
-    font-family:'Segoe UI', Arial, sans-serif;
-    background:#f4f6f9;
-    color:#222;
-}
-.container{
-    max-width:420px;
-    margin:auto;
-    background:#ffffff;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-.header{
-    background:linear-gradient(135deg,#1f3c88,#274bb5);
-    color:#fff;
-    padding:25px 20px;
-    text-align:center;
-}
-.header h1{
-    margin:0;
-    font-size:26px;
-    letter-spacing:0.5px;
-}
-.header p{
-    margin:6px 0 0;
-    font-size:14px;
-    opacity:0.9;
-}
-.tagline{
-    font-size:13px;
-    margin-top:10px;
-    opacity:0.85;
-}
-.section{
-    padding:18px 20px;
-    border-bottom:1px solid #eee;
-}
-.section h2{
-    font-size:17px;
-    margin-bottom:10px;
-    color:#1f3c88;
-    border-left:4px solid #1f3c88;
-    padding-left:8px;
-}
-.section p{
-    font-size:14px;
-    line-height:1.6;
-}
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-}
-.skill{
-    background:#eef2ff;
-    color:#1f3c88;
-    padding:6px 10px;
-    border-radius:15px;
-    font-size:12px;
-    font-weight:500;
-}
-.project{
-    margin-bottom:10px;
-}
-.project-title{
-    font-weight:600;
-    font-size:14px;
-}
-.buttons{
-    padding:20px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-}
-.btn{
-    text-decoration:none;
-    text-align:center;
-    padding:12px 8px;
-    border-radius:8px;
-    font-size:14px;
-    font-weight:600;
-    color:#fff;
-    background:#1f3c88;
-    transition:0.2s;
-}
-.btn:hover{
-    background:#16306d;
-}
-.btn.secondary{background:#25D366;}
-.btn.dark{background:#333;}
-.footer{
-    text-align:center;
-    font-size:12px;
-    padding:12px;
-    background:#f1f3f7;
-    color:#666;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeet Karkar | Automation Engineer & Industry 4.0 Specialist</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Professional portfolio of Jeet Karkar, Automation Engineer at Hi-Con Technocast. Specializing in Industry 4.0 solutions, RFID tracking, and industrial dashboards.">
+    <meta name="keywords" content="Jeet Karkar, Automation Engineer, Industry 4.0, RFID Tracking, Industrial Dashboard, Hi-Con Technocast, Portfolio">
+    <meta name="author" content="Jeet Karkar">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<div class="container">
-
-    <!-- HEADER -->
-    <div class="header">
-        <h1>Jeet Karkar</h1>
-        <p>Mechanical Engineering Graduate</p>
-        <div class="tagline">
-            Manufacturing • Process Improvement • Digital Systems
+    <!-- Background Grid Effect -->
+    <div class="grid-bg"></div>
+    <div class="glow-orb" id="orb-1"></div>
+    <div class="glow-orb" id="orb-2"></div>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">JK<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience-edu" class="nav-link">Timeline</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link btn-nav">Connect</a>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
-    </div>
-
-    <!-- ABOUT -->
-    <div class="section">
-        <h2>About Me</h2>
-        <p>
-            Mechanical Engineering graduate with hands-on experience in investment
-            casting and machining operations. Passionate about integrating digital
-            tools with manufacturing systems to improve productivity, quality,
-            and decision-making.
-        </p>
-    </div>
-
-    <!-- EDUCATION (NEW SECTION) -->
-    <div class="section">
-        <h2>Education</h2>
-        <p>
-            <strong>B.E. in Mechanical Engineering</strong><br>
-            Government Engineering College, Rajkot<br>
-            CGPA: <strong>7.49</strong>
-        </p>
-        <p>
-            <strong>12th Science</strong><br>
-            Jawahar Navodaya Vidyalaya, Rajkot<br>
-            Percentage: <strong>74%</strong>
-        </p>
-        <p>
-            <strong>10th</strong><br>
-            Jawahar Navodaya Vidyalaya, Rajkot<br>
-            Percentage: <strong>72.2%</strong>
-        </p>
-    </div>
-
-    <!-- SKILLS -->
-    <div class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">Manufacturing Processes</div>
-            <div class="skill">Investment Casting</div>
-            <div class="skill">Machining</div>
-            <div class="skill">Production Planning</div>
-            <div class="skill">Maintenance Management</div>
-            <div class="skill">Excel VBA</div>
-            <div class="skill">HTML / CSS / JS</div>
-            <div class="skill">Arduino & IoT</div>
-            <div class="skill">QR & NFC Systems</div>
-        </div>
-    </div>
-
-    <!-- EXPERIENCE -->
-    <div class="section">
-        <h2>Industrial Experience</h2>
-        <p>
-            <strong>Production Planning & Control Deparment </strong><br>
-            Hi-Con Technocast Pvt. Ltd.
-        </p>
-        <p>
-            • Visual management improvements<br>
-            • Machine maintenance digitization<br>
-            • Process documentation & productivity analysis
-        </p>
-    </div>
-
-    <!-- PROJECTS -->
-    <div class="section">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <div class="project-title">QR Code–Based Machine Data System</div>
-            <p>Scan QR to view machine specifications, history, and maintenance records.</p>
-        </div>
-
-        <div class="project">
-            <div class="project-title">Machine Maintenance Excel System</div>
-            <p>VBA-based checklist with auto serial numbers and history tracking.</p>
-        </div>
-
-        <div class="project">
-            <div class="project-title">Arduino & IoT Mini Projects</div>
-            <p>Distance measurement with voice output and automation concepts.</p>
-        </div>
-    </div>
-
-    <!-- GOALS -->
-    <div class="section">
-        <h2>Career Goals</h2>
-        <p>
-            <strong>Short-Term:</strong> Secure a role in manufacturing or operations.<br>
-            <strong>Long-Term:</strong> Grow into a Senior Manager leading digital transformation.
-        </p>
-    </div>
-
-    <!-- ACTION BUTTONS -->
-    <div class="buttons">
-        <a href="tel:+919313115156" class="btn">📞 Call</a>
-        <a href="https://wa.me/919313115156" class="btn secondary">💬 WhatsApp</a>
-        <a href="mailto:jeetkarkar2811@gmail.com" class="btn dark">✉ Email</a>
-        <a href="https://linkedin.com/in/jeet-karkar" class="btn">🔗 LinkedIn</a>
-        <a href="https://instagram.com/jeet_karkar_" class="btn instagram">📸 Instagram</a>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="footer">
-        © 2026 Jeet Karkar | NFC Digital Portfolio
-    </div>
-
-</div>
-
-</body>
-</html>
-
+    </header>
+    <main class="content-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-content">
+                <div class="badge fade-in">
+                    <span class="pulse-dot"></span> Automation Engineer | Industry 4.0
+                </div>
+                <h1 class="fade-in">Jeet Karkar</h1>
+                <h2 class="typing-text fade-in">
+                    <span class="text-cursor"></span>
+                </h2>
+                <p class="hero-desc fade-in">
+                    Bridging the gap between physical manufacturing systems and modern digital tools to optimize productivity, automate workflows, and drive industrial efficiency.
+                </p>
+                <div class="hero-actions fade-in">
+                    <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary"><i class="fa-solid fa-gears"></i> View Projects</a>
+                </div>
+            </div>
+            
+            <!-- NFC Digital Card Concept -->
+            <div class="card-container fade-in">
+                <div class="nfc-card" id="nfcCard">
+                    <!-- Front of the Card -->
+                    <div class="card-front">
+                        <div class="card-header-nfc">
+                            <span class="nfc-chip"></span>
+                            <i class="fa-solid fa-wifi nfc-signal"></i>
+                        </div>
+                        <div class="card-body-nfc">
+                            <h3>Jeet Karkar</h3>
+                            <p>Automation Engineer</p>
+                            <span class="specialty-badge">Industry 4.0 Solutions</span>
+                        </div>
+                        <div class="card-footer-nfc">
+                            <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap to Flip</span>
+                            <span class="card-logo">JK</span>
+                        </div>
+                    </div>
+                    <!-- Back of the Card (QR Code) -->
+                    <div class="card-back">
+                        <h3>Quick Connect</h3>
+                        <p>Scan to save contact info</p>
+                        <!-- Stylized Mock QR Code -->
+                        <div class="qr-code-wrapper">
+                            <div class="qr-code">
+                                <div class="qr-corner top-left"></div>
+                                <div class="qr-corner top-right"></div>
+                                <div class="qr-corner bottom-left"></div>
+                                <div class="qr-center">
+                                    <div class="qr-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="qr-subtext">NFC-Enabled Digital Portfolio</p>
+                        <div class="card-footer-nfc">
+                            <span class="tap-hint"><i class="fa-solid fa-rotate"></i> Tap to Flip Back</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats Highlights Grid -->
+        <section class="stats-section container-grid">
+            <div class="stat-card reveal">
+                <div class="stat-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="stat-info">
+                    <span class="stat-num">Industry 4.0</span>
+                    <span class="stat-label">Core Focus</span>
+                </div>
+            </div>
+            <div class="stat-card reveal">
+                <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="stat-info">
+                    <span class="stat-num">RFID & IoT</span>
+                    <span class="stat-label">Active Deployments</span>
+                </div>
+            </div>
+            <div class="stat-card reveal">
+                <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="stat-info">
+                    <span class="stat-num">Dashboards</span>
+                    <span class="stat-label">Operational Tech</span>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="section-layout reveal" id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <span class="header-line"></span>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-container">
+                    <div class="profile-frame">
+                        <img src="assets/jeet.jpg" alt="Jeet Karkar" class="profile-img">
+                        <div class="frame-corner top-left-c"></div>
+                        <div class="frame-corner top-right-c"></div>
+                        <div class="frame-corner bottom-left-c"></div>
+                        <div class="frame-corner bottom-right-c"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am an <strong>Automation Engineer</strong> at <strong>Hi-Con Technocast Pvt. Ltd.</strong>, having transitioned from my initial role in Production Planning & Control (PPC). Combining classical mechanical principles with Industry 4.0 tools, I design smart, data-driven systems that streamline assembly floor monitoring, reduce paper logs, and optimize predictive maintenance workflows.
+                        </p>
+                        <p>
+                            My core competencies include engineering industrial IoT dashboards for real-time telemetry, deploying RFID-based tracking systems for identification, and automating manual shop floor reporting using Excel VBA. I focus on converting raw manufacturing logs into visual dashboards that enable plant supervisors to make fast, accurate operational decisions.
+                        </p>
+                    </div>
+                    <div class="about-quote">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p>Integrate digital agility with industrial resilience to build the factories of tomorrow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience & Education Unified Timeline -->
+        <section class="section-layout reveal" id="experience-edu">
+            <div class="section-header">
+                <h2>Path & Milestones</h2>
+                <span class="header-line"></span>
+            </div>
+            
+            <div class="toggle-container">
+                <button class="toggle-btn active" data-target="experience"><i class="fa-solid fa-briefcase"></i> Experience</button>
+                <button class="toggle-btn" data-target="education"><i class="fa-solid fa-graduation-cap"></i> Education</button>
+            </div>
+            <!-- Experience Timeline -->
+            <div class="timeline-wrapper active" id="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <h3>Automation Engineer</h3>
+                        <span class="timeline-date">Hi-Con Technocast Pvt. Ltd. | Current</span>
+                    </div>
+                    <div class="timeline-body">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Promoted to lead plant-floor automation initiatives, developing and implementing Industry 4.0 solutions.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Engineered and deployed an RFID-based tracking and identification system to monitor inventory flow and reduce batch processing delays.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Developed centralized industrial dashboards using IoT telemetry data to provide plant management with real-time operational metrics.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <h3>PPC & Digitization Specialist</h3>
+                        <span class="timeline-date">Hi-Con Technocast Pvt. Ltd. | Previous</span>
+                    </div>
+                    <div class="timeline-body">
+                        <ul>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Initiated visual management boards and digital systems on the production floor to track and report daily manufacturing yields.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Digitized machine maintenance logs using Excel VBA automation, saving manual logging hours.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Standardized production documents and performed cycle-time analysis to identify casting bottlenecks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Education Timeline -->
+            <div class="timeline-wrapper" id="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <h3>B.E. in Mechanical Engineering</h3>
+                        <span class="timeline-date">Government Engineering College, Rajkot | CGPA: 7.49</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Focused on manufacturing technology, design engineering, and operations research. Developed active projects integrating automation concepts with mechanical processes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <h3>12th Science</h3>
+                        <span class="timeline-date">Jawahar Navodaya Vidyalaya, Rajkot | Percentage: 74%</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Core focus on Physics, Chemistry, and Mathematics. Built structural foundation for analytical thinking and engineering disciplines.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <h3>10th Grade</h3>
+                        <span class="timeline-date">Jawahar Navodaya Vidyalaya, Rajkot | Percentage: 72.2%</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Completed secondary school certification with excellence in science and mathematics subjects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section class="section-layout reveal" id="skills">
+            <div class="section-header">
+                <h2>Technical Skillset</h2>
+                <span class="header-line"></span>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Skill Category: Core Mechanical -->
+                <div class="skill-category-card">
+                    <div class="category-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Industrial & Mechanical</h3>
+                    <div class="skills-list">
+                        <div class="skill-tag">Manufacturing Processes</div>
+                        <div class="skill-tag">Investment Casting</div>
+                        <div class="skill-tag">Machining Operations</div>
+                        <div class="skill-tag">Production Planning (PPC)</div>
+                        <div class="skill-tag">Maintenance Management</div>
+                    </div>
+                </div>
+                
+                <!-- Skill Category: Digital & Automation -->
+                <div class="skill-category-card">
+                    <div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Digital & IoT Systems</h3>
+                    <div class="skills-list">
+                        <div class="skill-tag">RFID Tracking & Identification</div>
+                        <div class="skill-tag">Industrial Dashboarding</div>
+                        <div class="skill-tag">Industry 4.0 Solutions</div>
+                        <div class="skill-tag">Excel VBA Automation</div>
+                        <div class="skill-tag">Arduino & IoT Development</div>
+                        <div class="skill-tag">QR & NFC Data Systems</div>
+                        <div class="skill-tag">HTML5 / CSS3 / JS</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section class="section-layout reveal" id="projects">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <span class="header-line"></span>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: RFID Tracking -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/rfid_system.jpg" alt="RFID Tracking System" class="project-img">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>RFID-Based Tracking & Identification</h3>
+                        <p>Developed an automated identification system using RFID tags and readers to track components across casting gates, optimizing workflow traceability and bottleneck detection.</p>
+                        <div class="project-tags">
+                            <span>RFID / IoT</span>
+                            <span>Hardware</span>
+                            <span>Traceability</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: Industrial Dashboard -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/industrial_dashboard.jpg" alt="Industrial Dashboard" class="project-img">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Industrial IoT Dashboard</h3>
+                        <p>Built a centralized production dashboard connecting sensor nodes to display real-time machine telemetry, active maintenance statuses, and plant performance gauges.</p>
+                        <div class="project-tags">
+                            <span>Industry 4.0</span>
+                            <span>Data Analytics</span>
+                            <span>Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3: QR Code -->
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="assets/qr_machine_system.jpg" alt="QR Machine Data System" class="project-img">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>QR Code-Based Machine Data System</h3>
+                        <p>Designed a decentralized data tracking portal where scanning standard QR codes displays instant machine logs, preventative maintenance schedules, and active history logs.</p>
+                        <div class="project-tags">
+                            <span>HTML/CSS/JS</span>
+                            <span>QR Systems</span>
+                            <span>Digitization</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Excel VBA -->
+                <div class="project-card">
+                    <div class="project-icon-top"><i class="fa-solid fa-file-excel"></i></div>
+                    <div class="project-card-content">
+                        <h3>Machine Maintenance Excel System</h3>
+                        <p>Engineered a VBA-backed automated checklist tool features auto-incrementing serial tracking, historical search, and data validation rules to streamline machine health inspections.</p>
+                        <div class="project-tags">
+                            <span>Excel VBA</span>
+                            <span>Process Optimization</span>
+                            <span>Data Logging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Career Goals Section -->
+        <section class="section-layout reveal" id="goals">
+            <div class="section-header">
+                <h2>Career Vision</h2>
+                <span class="header-line"></span>
+            </div>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <div class="goal-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <div class="goal-content">
+                        <h3>Short-Term Goal</h3>
+                        <p>Optimize factory floor operations using a
